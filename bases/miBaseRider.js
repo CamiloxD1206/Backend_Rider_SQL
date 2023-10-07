@@ -1,7 +1,7 @@
-import  Sequelize  from "sequelize";
- const miBase=  new Sequelize('trimestre','root','1234',{
-    host:"localhost",
-    dialect:"mysql"
- })
+import Sequelize from "sequelize";
+const miBase = new Sequelize('trimestre', 'root', '0905', {
+    host: "localhost",
+    dialect: "mysql"
+})
 
- export default miBase;
+export default miBase;

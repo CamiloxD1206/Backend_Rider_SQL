@@ -6,6 +6,8 @@ import { miRutaAprendiz } from "./routes/miRutaRider.js";
 import { miRutaInstructor } from "./routes/intructores.routes.js";
 import { miRutaResultados } from "./routes/resultados.routes.js";
 import { miRutasNotas } from "./routes/notas.routes.js";
+import { miRutaCompetencia } from "./routes/competencia.routes.js";
+import { miRutaCompeResul } from "./routes/com_res.routes.js";
 import miBase from "./bases/miBaseRider.js";
 
 const app = express();
@@ -22,9 +24,11 @@ app.get('/', (req, res) => {
 
 app.use('/aprendices', miRutaAprendiz);
 app.use('/instructores', miRutaInstructor);
-app.use('/ruta',miRutaAprenInstruc);
-app.use('/resultados',miRutaResultados);
-app.use('/notas',miRutasNotas);
+app.use('/ruta', miRutaAprenInstruc);
+app.use('/resultados', miRutaResultados);
+app.use('/notas', miRutasNotas);
+app.use('/competencia', miRutaCompetencia);
+app.use('/comperesul', miRutaCompeResul);
 
 
 
